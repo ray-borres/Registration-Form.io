@@ -1,0 +1,141 @@
+body {
+    box-sizing: border-box;
+    background: linear-gradient(135deg, #0eefff 0%, #dcd4e4 100%);
+    min-height: 100%;
+    padding: 2rem 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: rgb(255, 255, 255);
+    border-radius: 16px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    padding: 2.5rem;
+}
+
+.form-title {
+    background-color: #0fa016;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.form-subtitle {
+    text-align: center;
+    color: #6c757d;
+    margin-bottom: 2rem;
+}
+
+.form-label {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.form-control, .form-select {
+    border-radius: 8px;
+    border: 2px solid #e0e0e0;
+    padding: 0.75rem;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: #20da6d;
+    box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25);
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 0.875rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 8px;
+    border: none;
+    background: linear-gradient(135deg, #10f141 0%, #074e4b 100%);
+    color: white;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    margin-top: 1.5rem;
+}
+
+.btn-submit:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(102, 126, 234, 0.4);
+}
+
+.btn-submit:active {
+    transform: translateY(0);
+}
+
+.modal-header {
+    background: linear-gradient(135deg, #6b6902 0%, #315503 100%);
+    color: white;
+    border-radius: 8px 8px 0 0;
+}
+
+.modal-title {
+    font-weight: 700;
+}
+
+.detail-row {
+    padding: 0.75rem 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.detail-row:last-child {
+    border-bottom: none;
+}
+
+.detail-label {
+    font-weight: 600;
+    color: #004e48;
+    margin-bottom: 0.25rem;
+}
+
+.detail-value {
+    color: #333;
+    word-break: break-word;
+}
+
+.btn-confirm {
+    background: linear-gradient(135deg, #95ec22 0%, #1e1824 100%);
+    border: none;
+    padding: 0.625rem 2rem;
+    font-weight: 600;
+}
+
+.btn-confirm:hover {
+    background: linear-gradient(135deg, #82a503 0%, #1e0335 100%);
+}
+
+.btn-secondary {
+    padding: 0.625rem 2rem;
+    font-weight: 600;
+}
+
+.success-message {
+    background-color: antiquewhite;
+    display: none;
+    text-align: center;
+    padding: 2rem;
+}
+
+.success-message h2 {
+    color: #28a745;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.success-message p {
+    font-size: 1.1rem;
+    color: #6c757d;
+}
+
+@view-transition { navigation: auto; }
